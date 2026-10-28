@@ -159,9 +159,9 @@ def main():
     print(f"🪣 Bucket: {bucket}")
     print(f"🌐 Endpoint: {endpoint}")
     if using_aws_credentials:
-        print(f"🔑 Auth: AWS S3 credentials (Access Key: ...{aws_access_key[-8:]})")
+        print("🔑 Auth: AWS S3 credentials configured")
     else:
-        print(f"🔑 Auth: IBM COS credentials (API Key: ...{api_key[-8:]})")
+        print("🔑 Auth: IBM COS credentials configured")
     print()
 
     # Create temp config
